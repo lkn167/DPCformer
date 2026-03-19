@@ -34,7 +34,7 @@ def check_data_quality(genotype_array, phenotype_array):
     print("==========================")
 
 def preprocess_data(output_file_path, map_file_path):
-    merged_df_chunks = pd.read_csv(output_file_path, sep='\t', chunksize=100, nrows=400)
+    merged_df_chunks = pd.read_csv(output_file_path, sep='\t', chunksize=100)
     one_hot_genotype_list = []
     phenotypes_list = []
     print("Starting data preprocessing...")
