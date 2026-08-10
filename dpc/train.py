@@ -29,7 +29,7 @@ if __name__ == '__main__':
 
     output_file_path = '/public/home/knliu25/lkn/dpc_model_test/chr12345678910_hybrid_PH_BJ_extracted.csv'
 
-    merged_df = pd.read_csv(output_file_path, sep='\t', chunksize=100, nrows=800)
+    merged_df = pd.read_csv(output_file_path, sep='\t', chunksize=100)
 
     one_hot_genotype_list = []
     phenotypes_list = []
